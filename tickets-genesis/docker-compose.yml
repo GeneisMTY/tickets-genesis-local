@@ -1,0 +1,7 @@
+services:
+  tickets-genesis:
+    build: .
+    container_name: tickets-genesis
+    ports:
+      - "8080:80"
+    restart: unless-stopped
